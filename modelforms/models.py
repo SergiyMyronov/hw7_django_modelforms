@@ -9,9 +9,3 @@ class Person(models.Model):
 
     def __str__(self):
         return self.first_name + '_' + self.last_name
-
-
-class PersonForm(ModelForm):
-    class Meta:
-        model = Person
-        fields = ['first_name', 'last_name', 'email']
