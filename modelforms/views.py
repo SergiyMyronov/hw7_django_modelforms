@@ -1,7 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 
-from .models import Person, PersonForm
+from .forms import PersonForm
+from .models import Person
 
 
 def index(request):

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Person</title>
 </head>
-<body>
+<body leftmargin="30">
     <h2>Person form</h2>
     <form method="post">
         {% csrf_token %}
         <table>
         {{form.as_table}}
         </table>
+        <p> </p>
         <input type="submit" value="Submit" />
     </form>
     <h2>All Person Details</h2>
